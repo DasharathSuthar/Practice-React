@@ -1,14 +1,12 @@
-
-import './App.css'
-import FullForm from './components/FullForm'
-import Joke from './components/Joke'
+// import './App.css'
+import Weather from './components/Weather'
 
 function App() {
 
 
   return (
     <>
-      <Joke></Joke>
+     <Weather></Weather>
     </>
   )
 }
