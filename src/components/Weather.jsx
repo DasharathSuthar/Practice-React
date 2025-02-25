@@ -22,7 +22,7 @@ export default function Weather() {
         // console.log(jsonRes);
 
         let result = {
-            city : city,
+            city: city,
             temp: jsonRes.main.temp,
             tempMin: jsonRes.main.temp_min,
             tempMax: jsonRes.main.temp_max,
@@ -38,7 +38,7 @@ export default function Weather() {
     let changeCity = (e) => {
         setCity(e.target.value);
     }
-    let submitForm = async(e) => {
+    let submitForm = async (e) => {
         e.preventDefault();
         getInfo();
         setCity("");
@@ -62,17 +62,17 @@ export default function Weather() {
                         image="./public/weather.webp"
                         title="green iguana"
                     />
-                    <CardContent style={{width:"300px"}}>
+                    <CardContent style={{ width: "300px" }}>
                         <Typography gutterBottom variant="h5" component="div">
                             {weatherData.city}
                         </Typography>
                         <Typography variant="body2" sx={{ color: 'text.secondary' }} component={"span"}>
-                           <p>Temperature : {weatherData.temp}</p>
-                           <p>Min Temp : {weatherData.tempMin}</p>
-                           <p>Max Temp : {weatherData.tempMax}</p>
-                           <p>Humidity : {weatherData.humidity}</p>
-                           <p>Feels Like : {weatherData.feelslike}</p>
-                           <p>Weather : {weatherData.weather}</p>
+                            <p>Temperature : {weatherData.temp}</p>
+                            <p>Min Temp : {weatherData.tempMin}</p>
+                            <p>Max Temp : {weatherData.tempMax}</p>
+                            <p>Humidity : {weatherData.humidity}</p>
+                            <p>Feels Like : {weatherData.feelslike}</p>
+                            <p>Weather : {weatherData.weather}</p>
                         </Typography>
                     </CardContent>
                 </Card>

@@ -8,11 +8,9 @@ const FullForm = () => {
   });
 
   function formDataChange(e) {
-    let fieldName = e.target.name;
-    let newValue = e.target.value;
 
     setFormData((currValue) => {
-      currValue[fieldName] = newValue;
+      currValue[e.target.name] = e.target.value;
       return { ...currValue };
     });
   }
